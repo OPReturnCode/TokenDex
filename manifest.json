@@ -1,0 +1,11 @@
+{
+  "display_name": "Token Dex",
+  "description": "SLP on-chain noncustodial token swap",
+  "version": "0.01",
+  "project_url": "https://github.com/OPReturnCode/TokenDex",
+  "minimum_ec_version": "3.0.0",
+  "package_name": "TokenDex",
+  "available_for": [
+    "qt"
+  ]
+}
