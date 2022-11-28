@@ -418,6 +418,9 @@ class DexTab(QtWidgets.QWidget):
     def place_order(self):
         order_type = self.order_type_combo.currentData()
         rate = self.rate_edit.get_amount()
+        if rate is None:
+            return self.window.show_error("Please enter a rate.")
+
         rate = PyDecimal(rate) / 10 ** 8
         assert rate.as_tuple().exponent == 0  # make sure it doesn't get round
         rate = int(rate)
